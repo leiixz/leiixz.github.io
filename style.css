@@ -128,12 +128,13 @@ body {
 .icon-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 50px;
   justify-items: center;
   align-items: center;
-  padding: 40px;
+  padding: 45px;
   background-color: #070707; /* Dark background */
-  border-radius: 40px; /* Curved corners */
+  border-radius: 10px; /* Curved corners */
+  margin-bottom: 10%;
 }
 
 .icon-item {
@@ -152,7 +153,9 @@ body {
   margin-top: 10px;
   color: white;
   font-size: 15px;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 
+  0 0 20px rgba(255, 255, 255, 0.5), 
+  0 0 30px rgba(255, 255, 255, 0.3);
   display: none; /* Hidden by default */
   position: absolute;
   bottom: -30px; /* Adjust position as needed */
