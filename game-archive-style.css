@@ -43,6 +43,9 @@ body {
 .navbar {
   overflow: hidden;
   background-color: rgb(32, 32, 32);
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure it's above other content */
 }
 
 /* Style the navigation bar links */
