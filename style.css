@@ -303,6 +303,10 @@ body {
   }
 }
 
+.article-buttons {
+  font-size: 12px;
+}
+
 /* Footer */
 .site-footer {
   background-color: #070707; /* Dark background */
