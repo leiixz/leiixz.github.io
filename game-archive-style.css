@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #000;
 }
 
 /* Style the body */
@@ -42,7 +43,7 @@ body {
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: rgb(32, 32, 32);
+  background-color: #136c70;
   position: sticky;
   top: 0;
   z-index: 1000; /* Ensure it's above other content */
@@ -65,8 +66,7 @@ body {
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #065458;
 }
 
 /* Column container */
@@ -82,26 +82,72 @@ body {
 .side {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
-  background-color: #111111;
-  padding: 20px;
+  background-color: #222833;
+  padding: 30px;
 }
 
 /* Main column */
 .main {   
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
-  background-color: rgb(0, 0, 0);
+  background-color: #12171f;
   padding: 15px;
 }
 
-.game-banner-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+/* Game container */
+.game {
+  position: relative;
+  width: 850px; /* Adjust the width as needed */
+  margin: 20px auto;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
+/* Banner container */
+.game-banner-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+}
+
+/* Banner image */
+.game-banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+/* Game info container */
+.game-info {
+  position: absolute;
+  bottom: -100%; /* Initially hidden below the container */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  transition: bottom 0.3s ease;
+  padding: 20px;
+  overflow-y: auto;
+  text-align: justify;
+}
+
+/* Show game info on hover */
+.game:hover .game-banner-image {
+  opacity: 0.3;
+}
+
+.game:hover .game-info {
+  bottom: 0; /* Slide up to reveal */
+}
+
+/* Account Info */
 .account-image-container {
   position: relative;
   display: inline-block;
@@ -109,11 +155,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 
 .profile-image {
-  width: 100%;
-  height: 60px;
+  width: 190px; /* Set appropriate width for profile picture */
+  height: 190px; /* Set appropriate height for profile picture */
+  border-radius: 50%;
+  border: 3px solid #087275; /* Add border with color */
+  transition: filter 0.3s ease;
 }
 
 .text-overlay {
@@ -121,9 +171,19 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color:white;
-  font-size: 15px;
+  color: white;
+  font-size: 25px;
   text-shadow: 1px 1px 2px black;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.account-image-container:hover .profile-image {
+  filter: blur(5px);
+}
+
+.account-image-container:hover .text-overlay {
+  opacity: 1;
 }
 
 a {
@@ -135,14 +195,14 @@ a {
 .footer {
   padding: 3px;
   text-align: center;
-  background-color: #1a1a1a; /* Very dark grey background */
-  color: #838383; /* Light grey text for better readability */
+  background-color: #0e121a; /* Very dark grey background */
+  color: #4e4e4e; /* Light grey text for better readability */
 }
 
 .footer-divider {
   border: none;
   height: 1px;
-  background: #797979; /* Medium grey for divider */
+  background: #222833; /* Medium grey for divider */
   margin: 10px 560px;
 }
 
