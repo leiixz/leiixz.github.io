@@ -7,6 +7,26 @@ html {
   background-color: black;
 }
 
+/* Base container styling */
+.main-container {
+  margin: 0 auto;
+  padding: 3px;
+  background-color: rgb(12, 12, 12); /* Dark background color *//
+}
+
+/* Responsive max-widths */
+@media (max-width: 480px) {
+  .main-container {
+    max-width: 100%; /* Full width for small screens */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .main-container {
+    max-width: 600px; /* Max width for tablets */
+  }
+}
+
 a {
   color: rgb(0, 183, 255);
   text-decoration: none;
@@ -31,7 +51,7 @@ body {
 
 /* Increase the font size of the heading */
 .header h1 {
-  font-size: 70px;
+  font-size: 50px;
   text-shadow: 
     0 0 10px rgba(0, 0, 0, 0.7),   /* Dark shadow for light backgrounds */
     0 0 10px rgba(255, 255, 255, 0.7), /* Light shadow for dark backgrounds */
