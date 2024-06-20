@@ -129,15 +129,18 @@ body {
   padding: 20px;
 }
 
+/* Icons */
 .icon-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
   justify-items: center;
   align-items: center;
+  max-width: 350px; /* Optional max width for responsiveness */
   padding: 45px;
   background-color: #070707; /* Dark background */
   border-radius: 20px; /* Curved corners */
+  margin: 0 auto; /* Center horizontally */
   margin-bottom: 10%;
 }
 
@@ -158,8 +161,8 @@ body {
   color: white;
   font-size: 15px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 
-  0 0 20px rgba(255, 255, 255, 0.5), 
-  0 0 30px rgba(255, 255, 255, 0.3);
+              0 0 20px rgba(255, 255, 255, 0.5), 
+              0 0 30px rgba(255, 255, 255, 0.3);
   display: none; /* Hidden by default */
   position: absolute;
   bottom: -30px; /* Adjust position as needed */
@@ -172,19 +175,7 @@ body {
   display: block;
 }
 
-/* Responsive adjustments */
-@media screen and (max-width: 600px) {
-  .icon-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .icon-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
+/* Profiles */
 .profile-wrapper {
   text-align: center;
 }
