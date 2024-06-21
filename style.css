@@ -41,7 +41,7 @@ body {
   text-align: justify;
 }
 
-/* Header/logo Title */
+/* Header image */
 .header {
   padding: 100px;
   text-align: center;
@@ -60,6 +60,26 @@ body {
     0 0 20px rgba(255, 255, 255, 0.5), /* Additional light shadow */
     0 0 30px rgba(0, 0, 0, 0.3),   /* Further dark shadow */
     0 0 30px rgba(255, 255, 255, 0.3); /* Further light shadow */
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 80px;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 60px;
+  }
+  .header h1 {
+    font-size: 30px;
+  }
 }
 
 /* Style the top navigation bar */
