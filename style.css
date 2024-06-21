@@ -11,6 +11,7 @@ html {
 .main-container {
   margin: 0 auto;
   padding: 3px;
+  max-width: 100%;
   background-color: rgb(12, 12, 12); /* Dark background color *//
 }
 
@@ -23,7 +24,7 @@ html {
 
 @media (min-width: 481px) and (max-width: 768px) {
   .main-container {
-    max-width: 600px; /* Max width for tablets */
+    max-width: 100%; /* Max width for tablets */
   }
 }
 
