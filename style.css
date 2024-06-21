@@ -91,7 +91,6 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 100%; /* Ensure it takes full width of the container */
-  flex-shrink: initial;
 }
 
 .navbar a {
@@ -202,7 +201,7 @@ body {
 .text-container-main {
   max-width: 890px; /* Set the maximum width */
   padding: 20px; /* Padding inside the container */
-  background-color: #070707; /* Dark background */
+  background-color: #0a0a0a; /* Dark background */
   color: white; /* Text color */
   border-radius: 20px; /* Rounded corners */
   margin: 0 auto; /* Center horizontally */
