@@ -15,6 +15,11 @@ body {
   text-align: justify;
 }
 
+a {
+  color: rgb(0, 183, 255);
+  text-decoration: none;
+}
+
 /* Header/logo Title */
 .header {
   padding: 120px;
@@ -86,6 +91,45 @@ body {
   padding: 30px;
 }
 
+/* Account Info */
+.account-image-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.profile-image {
+  width: 190px; /* Set appropriate width for profile picture */
+  height: 190px; /* Set appropriate height for profile picture */
+  border-radius: 50%;
+  border: 3px solid #087275; /* Add border with color */
+  transition: filter 0.3s ease;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+  text-shadow: 1px 1px 2px black;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.account-image-container:hover .profile-image {
+  filter: blur(5px);
+}
+
+.account-image-container:hover .text-overlay {
+  opacity: 1;
+}
+
 /* Main column */
 .main {   
   -ms-flex: 70%; /* IE10 */
@@ -97,7 +141,8 @@ body {
 /* Game container */
 .game {
   position: relative;
-  width: 850px; /* Adjust the width as needed */
+  width: 100%; /* Default width for larger screens */
+  max-width: 850px; /* Limit the maximum width */
   margin: 20px auto;
   text-align: center;
   border-radius: 10px;
@@ -147,48 +192,32 @@ body {
   bottom: 0; /* Slide up to reveal */
 }
 
-/* Account Info */
-.account-image-container {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .game {
+    max-width: 700px; /* Adjust max width for medium screens */
+  }
 }
 
-.profile-image {
-  width: 190px; /* Set appropriate width for profile picture */
-  height: 190px; /* Set appropriate height for profile picture */
-  border-radius: 50%;
-  border: 3px solid #087275; /* Add border with color */
-  transition: filter 0.3s ease;
+@media screen and (max-width: 768px) {
+  .game {
+    max-width: 600px; /* Adjust max width for smaller screens */
+  }
+
+  .game-info {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
 }
 
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 25px;
-  text-shadow: 1px 1px 2px black;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
+@media screen and (max-width: 480px) {
+  .game {
+    max-width: 100%; /* Adjust width for very small screens */
+    margin: 10px; /* Reduce margin for very small screens */
+  }
 
-.account-image-container:hover .profile-image {
-  filter: blur(5px);
-}
-
-.account-image-container:hover .text-overlay {
-  opacity: 1;
-}
-
-a {
-  color: rgb(0, 183, 255);
-  text-decoration: none;
+  .game-info {
+    padding: 10px; /* Adjust padding for very small screens */
+  }
 }
 
 /* Footer */
