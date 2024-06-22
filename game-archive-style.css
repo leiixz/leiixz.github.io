@@ -78,7 +78,6 @@ a {
 
 /* Style the navigation bar */
 .navbar {
-  position: -webkit-sticky; /* For Safari */
   position: sticky; /* Make the navbar sticky */
   top: 0; /* Stick it to the top of the viewport */
   z-index: 1000; /* Ensure it appears above other content */
