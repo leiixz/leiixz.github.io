@@ -78,7 +78,7 @@ a {
 
 /* Style the navigation bar */
 .navbar {
-  position: sticky; /* Make the navbar sticky */
+  position: static;
   top: 0; /* Stick it to the top of the viewport */
   z-index: 1000; /* Ensure it appears above other content */
   overflow: hidden;
@@ -112,35 +112,21 @@ a {
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 1024px) {
-  .navbar {
-    padding: 0 10px; /* Adjust padding for medium screens */
-  }
-
-  .navbar a {
-    font-size: 14px; /* Decrease font size for medium screens */
-    padding: 12px 16px; /* Adjust padding for medium screens */
-  }
-}
-
 @media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
   .navbar a {
-    font-size: 12px; /* Decrease font size for smaller screens */
-    padding: 10px 14px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Decrease font size for smaller screens */
+    padding: 12px 16px; /* Adjust padding for smaller screens */
   }
 }
 
 @media screen and (max-width: 480px) {
   .navbar a {
-    font-size: 10px; /* Further decrease font size for very small screens */
-    padding: 8px 12px; /* Further adjust padding for very small screens */
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .navbar a {
-    font-size: 8px; /* Further decrease font size for extremely small screens */
-    padding: 6px 10px; /* Further adjust padding for extremely small screens */
+    font-size: 12px; /* Further decrease font size for very small screens */
+    padding: 10px 14px; /* Further adjust padding for very small screens */
   }
 }
 
