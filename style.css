@@ -100,6 +100,7 @@ body {
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+  font-size: 16px; /* Base font size */
 }
 
 .navbar a.right {
@@ -117,7 +118,7 @@ body {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 16px; /* Base font size */
   border: none;
   outline: none;
   color: white;
@@ -134,8 +135,6 @@ body {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  top: fixed;
-  left: fixed;
 }
 
 .dropdown-content a {
@@ -154,6 +153,25 @@ body {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .navbar a, .dropdown .dropbtn {
+    font-size: 14px; /* Smaller font size for medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar a, .dropdown .dropbtn {
+    font-size: 12px; /* Smaller font size for small screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar a, .dropdown .dropbtn {
+    font-size: 10px; /* Smaller font size for very small screens */
+  }
 }
 
 /* Column container */
