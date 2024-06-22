@@ -22,7 +22,7 @@ a {
 
 /* Header/logo Title */
 .header {
-  padding: 120px;
+  padding: 80px 20px; /* Adjusted padding for responsiveness */
   text-align: center;
   background: url(game\ selections-1.png) 0px 100%;
   background-repeat: no-repeat;
@@ -45,23 +45,60 @@ a {
   0 0 30px rgba(255, 255, 255, 0.3);
 }
 
-/* Style the top navigation bar */
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 60px 20px; /* Adjust padding for medium screens */
+  }
+
+  .header h1 {
+    font-size: 36px; /* Adjust font size for medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 40px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .header h1 {
+    font-size: 32px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 30px 10px; /* Adjust padding for very small screens */
+  }
+
+  .header h1 {
+    font-size: 28px; /* Adjust font size for very small screens */
+  }
+}
+
+/* Style the navigation bar */
 .navbar {
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Stick it to the top of the viewport */
+  z-index: 1000; /* Ensure it appears above other content */
   overflow: hidden;
-  background-color: #136c70;
-  position: sticky;
-  top: 0;
-  z-index: 1000; /* Ensure it's above other content */
+  background-color: #00a8b1;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0; /* Remove padding to prevent extra space */
+  max-width: 100%; /* Ensure it takes full width of the container */
 }
 
 /* Style the navigation bar links */
 .navbar a {
-  float: left;
-  display: block;
   color: white;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
+  transition: font-size 0.3s; /* Smooth transition for font size */
+  display: inline-block; /* Ensure links are displayed in a row */
+  box-sizing: border-box; /* Include padding and border in the total width */
 }
 
 /* Right-aligned link */
@@ -74,12 +111,31 @@ a {
   background-color: #065458;
 }
 
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar a {
+    font-size: 14px; /* Decrease font size for smaller screens */
+    padding: 12px 16px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar a {
+    font-size: 12px; /* Further decrease font size for very small screens */
+    padding: 10px 14px; /* Further adjust padding for very small screens */
+  }
+}
+
 /* Responsive text container */
 .text-container {
   max-width: 800px; /* Limit the maximum width */
   margin: 20px auto; /* Center the container */
   padding: 20px;
-  background-color: #1b212c; /* Light background color */
+  background-color: #2a2e35; /* Light background color */
   color: #ffffff; /* Text color */
   border: 1px solid #15181d; /* Visible thin border */
   border-radius: 10px;
