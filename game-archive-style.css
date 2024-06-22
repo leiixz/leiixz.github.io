@@ -138,6 +138,13 @@ a {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .navbar a {
+    font-size: 8px; /* Further decrease font size for extremely small screens */
+    padding: 6px 10px; /* Further adjust padding for extremely small screens */
+  }
+}
+
 /* Responsive text container */
 .text-container {
   max-width: 800px; /* Limit the maximum width */
