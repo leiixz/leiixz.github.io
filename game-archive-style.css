@@ -82,7 +82,7 @@ a {
   top: 0; /* Stick it to the top of the viewport */
   z-index: 1000; /* Ensure it appears above other content */
   overflow: hidden;
-  background-color: #00a8b1;
+  background-color: #007e85;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
