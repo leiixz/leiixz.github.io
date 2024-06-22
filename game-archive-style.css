@@ -74,6 +74,40 @@ a {
   background-color: #065458;
 }
 
+/* Responsive text container */
+.text-container {
+  max-width: 800px; /* Limit the maximum width */
+  margin: 20px auto; /* Center the container */
+  padding: 20px;
+  background-color: #1b212c; /* Light background color */
+  color: #ffffff; /* Text color */
+  border: 1px solid #15181d; /* Visible thin border */
+  border-radius: 10px;
+  box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
+  text-align: justify; /* Justify the text */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .text-container {
+    padding: 15px; /* Adjust padding for medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin: 15px auto; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-container {
+    padding: 8px; /* Adjust padding for very small screens */
+    margin: 10px auto; /* Adjust margin for very small screens */
+  }
+}
+
 /* Column container */
 .row {  
   display: -ms-flexbox; /* IE10 */
@@ -142,11 +176,12 @@ a {
 .game {
   position: relative;
   width: 100%; /* Default width for larger screens */
-  max-width: 850px; /* Limit the maximum width */
+  max-width: 800px; /* Limit the maximum width */
   margin: 20px auto;
   text-align: center;
   border-radius: 10px;
   overflow: hidden;
+  box-sizing: border-box; /* Include padding and border in total width */
 }
 
 /* Banner container */
@@ -211,7 +246,7 @@ a {
 
 @media screen and (max-width: 480px) {
   .game {
-    max-width: 100%; /* Adjust width for very small screens */
+    max-width: calc(100% - 20px); /* Adjust width for very small screens */
     margin: 10px; /* Reduce margin for very small screens */
   }
 
