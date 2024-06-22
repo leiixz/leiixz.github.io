@@ -112,21 +112,28 @@ a {
 }
 
 /* Responsive adjustments */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .navbar {
-    padding: 0 10px; /* Adjust padding for smaller screens */
+    padding: 0 10px; /* Adjust padding for medium screens */
   }
 
   .navbar a {
-    font-size: 14px; /* Decrease font size for smaller screens */
-    padding: 12px 16px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Decrease font size for medium screens */
+    padding: 12px 16px; /* Adjust padding for medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar a {
+    font-size: 12px; /* Decrease font size for smaller screens */
+    padding: 10px 14px; /* Adjust padding for smaller screens */
   }
 }
 
 @media screen and (max-width: 480px) {
   .navbar a {
-    font-size: 12px; /* Further decrease font size for very small screens */
-    padding: 10px 14px; /* Further adjust padding for very small screens */
+    font-size: 10px; /* Further decrease font size for very small screens */
+    padding: 8px 12px; /* Further adjust padding for very small screens */
   }
 }
 
