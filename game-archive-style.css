@@ -82,7 +82,7 @@ a {
   top: 0; /* Stick it to the top of the viewport */
   z-index: 1000; /* Ensure it appears above other content */
   overflow: hidden;
-  background-color: #007e85;
+  background-color: #0a0b0b;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
@@ -108,7 +108,7 @@ a {
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #065458;
+  background-color: #101111;
 }
 
 /* Responsive adjustments */
@@ -135,9 +135,9 @@ a {
   max-width: 800px; /* Limit the maximum width */
   margin: 20px auto; /* Center the container */
   padding: 20px;
-  background-color: #2a2e35; /* Light background color */
+  background-color: #1d1d1d; /* Light background color */
   color: #ffffff; /* Text color */
-  border: 1px solid #15181d; /* Visible thin border */
+  border: 1px solid rgb(14, 14, 14); /* Visible thin border */
   border-radius: 10px;
   box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
   text-align: justify; /* Justify the text */
@@ -177,7 +177,7 @@ a {
 .side {
   -ms-flex: 30%; /* IE10 */
   flex: 30%;
-  background-color: #222833;
+  background-color: #181818;
   padding: 30px;
 }
 
@@ -196,7 +196,7 @@ a {
   width: 190px; /* Set appropriate width for profile picture */
   height: 190px; /* Set appropriate height for profile picture */
   border-radius: 50%;
-  border: 3px solid #087275; /* Add border with color */
+  border: 3px solid #202020; /* Add border with color */
   transition: filter 0.3s ease;
 }
 
@@ -224,7 +224,7 @@ a {
 .main {   
   -ms-flex: 70%; /* IE10 */
   flex: 70%;
-  background-color: #12171f;
+  background-color: #131313;
   padding: 15px;
 }
 
@@ -236,6 +236,7 @@ a {
   margin: 20px auto;
   text-align: center;
   border-radius: 10px;
+  border: 3px solid #202020; /* Add border with color */
   overflow: hidden;
   box-sizing: border-box; /* Include padding and border in total width */
 }
@@ -315,7 +316,7 @@ a {
 .footer {
   padding: 3px;
   text-align: center;
-  background-color: #0e121a; /* Very dark grey background */
+  background-color: #0a0b0b; /* Very dark grey background */
   color: #4e4e4e; /* Light grey text for better readability */
 }
 
