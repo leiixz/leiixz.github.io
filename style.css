@@ -7,26 +7,6 @@ html {
   background-color: black;
 }
 
-/* Base container styling */
-.main-container {
-  margin: 0 auto;
-  padding: 3px;
-  max-width: 100%;
-  background-color: rgb(12, 12, 12); /* Dark background color *//
-}
-
-/* Responsive max-widths */
-@media (max-width: 480px) {
-  .main-container {
-    max-width: 100%; /* Full width for small screens */
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .main-container {
-    max-width: 100%; /* Max width for tablets */
-  }
-}
 
 a {
   color: rgb(0, 183, 255);
@@ -85,7 +65,7 @@ body {
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: rgb(32, 32, 32);
+  background-color: #0a0b0b;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
@@ -184,7 +164,7 @@ body {
 /* Sidebar/left column */
 .side {
   flex: 30%;
-  background-color: #111111;
+  background-color: #181818;
   padding: 20px;
 }
 
@@ -210,6 +190,7 @@ body {
   padding: 20px; /* Padding inside the container */
   background-color: #070707; /* Dark background */
   color: white; /* Text color */
+  border: 1px solid rgb(56, 56, 56); /* Visible thin border */
   border-radius: 20px; /* Rounded corners */
   margin: 0 auto; /* Center horizontally */
   box-sizing: border-box; /* Include padding in the element's total width and height */
@@ -219,8 +200,9 @@ body {
 .text-container-main {
   max-width: 890px; /* Set the maximum width */
   padding: 20px; /* Padding inside the container */
-  background-color: #0a0a0a; /* Dark background */
+  background-color: #070707; /* Dark background */
   color: white; /* Text color */
+  border: 1px solid rgb(56, 56, 56); /* Visible thin border */
   border-radius: 20px; /* Rounded corners */
   margin: 0 auto; /* Center horizontally */
   box-sizing: border-box; /* Include padding in the element's total width and height */
@@ -236,6 +218,7 @@ body {
   max-width: 350px; /* Optional max width for responsiveness */
   padding: 45px;
   background-color: #070707; /* Dark background */
+  border: 1px solid rgb(56, 56, 56); /* Visible thin border */
   border-radius: 20px; /* Curved corners */
   margin: 0 auto; /* Center horizontally */
   margin-bottom: 10%;
@@ -299,7 +282,8 @@ body {
 .profile-image {
   width: 150px; /* Adjust the width as needed */
   height: 150px; /* Adjust the height as needed */
-  border: 5px solid #2c2c2c; /* Border for the images */
+  background-color: #070707; /* Dark background */
+  border: 5px solid rgb(56, 56, 56); /* Visible thin border */
   border-radius: 50%; /* Makes the image round */
   transition: opacity 0.3s ease;
 }
@@ -365,7 +349,7 @@ body {
 
 /* Main column */
 .main {
-  background-color: rgb(0, 0, 0);
+  background-color: #131313;
   padding: 20px;
   box-sizing: border-box; /* Ensures padding is included in the total width/height */
   width: 70%; /* Default width */
@@ -436,7 +420,7 @@ body {
 
 /* Footer */
 .site-footer {
-  background-color: #070707; /* Dark background */
+  background-color: #0a0b0b; /* Dark background */
   color: white;
   padding: 20px 0;
   text-align: center;

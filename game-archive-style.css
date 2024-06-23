@@ -108,7 +108,8 @@ a {
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: #101111;
+  background-color: #ddd;
+  color: black;
 }
 
 /* Responsive adjustments */
