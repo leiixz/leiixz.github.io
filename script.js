@@ -23,4 +23,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       window.requestAnimationFrame(step);
     });
   });
-  
