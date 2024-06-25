@@ -8,4 +8,4 @@ This repository contains the code for my personal portfolio website, showcasing 
 >- **Contact:** Form to reach out directly. **_(W.I.P)_**
 
 ## Note
-This portfolio is for personal use. Please do not copy any content, but feel free to explore the site.
+>This portfolio is for personal use. Please do not copy any content, but feel free to explore the site.
