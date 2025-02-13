@@ -19,13 +19,15 @@ body {
   margin: 0;
   color: white;
   text-align: justify;
+  background-color: #131313;
 }
 
 /* Header image */
 .header {
   padding: 100px;
   text-align: center;
-  background: url('https://cdn.discordapp.com/attachments/1250423146776100974/1255072966891405322/header-banner.jpg?ex=667bcd49&is=667a7bc9&hm=9a0a5a3a60c85e40ed5480ec213124c0664cb1ba1a51868cd646ddaa3f77334e&') no-repeat center center;
+  background-image: url('header-banner.jpg');
+  background-color: black;
   background-size: cover;
   color: white;
 }
